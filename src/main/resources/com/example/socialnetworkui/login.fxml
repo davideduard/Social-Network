@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Accordion?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="449.6" prefWidth="671.2" style="-fx-background-color: transparent;" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.socialnetworkui.UI.LoginController">
+    <children>
+        <AnchorPane layoutX="26.0" layoutY="22.0" minHeight="-Infinity" minWidth="-Infinity" prefHeight="405.0" prefWidth="633.0" style="-fx-background-color: white; -fx-background-radius: 20 20 20 20;">
+            <children>
+                <AnchorPane fx:id="rightPane" layoutX="323.0" prefHeight="406.0" prefWidth="243.0" style="-fx-background-color: white; -fx-background-radius: 0 20 20 0;">
+                    <children>
+                        <Text fx:id="loginText" layoutX="34.0" layoutY="60.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Log in">
+                            <font>
+                                <Font name="Varela Round" size="30.0" />
+                            </font>
+                        </Text>
+                        <ImageView fx:id="closeBtnImg" fitHeight="18.0" fitWidth="19.0" layoutX="278.0" layoutY="14.0" onMouseClicked="#closeApp" pickOnBounds="true" preserveRatio="true" style="-fx-cursor: hand;">
+                            <image>
+                                <Image url="@../../../../../../images/close.png" />
+                            </image>
+                        </ImageView>
+                        <Accordion />
+                        <TextField fx:id="usernameField" layoutX="70.0" layoutY="175.0" prefHeight="26.0" prefWidth="170.0" promptText="Username" style="-fx-background-color: transparent;" />
+                        <Line fx:id="line1" endX="56.0" layoutX="182.0" layoutY="203.0" opacity="0.2" startX="-112.0" startY="0.600006103515625" stroke="#5a5a5a" strokeWidth="1.5" />
+                        <Line fx:id="line2" endX="56.0" layoutX="182.0" layoutY="241.0" opacity="0.2" startX="-112.0" startY="0.600006103515625" stroke="#5a5a5a" strokeWidth="1.5" />
+                        <PasswordField fx:id="passwordField" layoutX="69.0" layoutY="213.0" prefHeight="26.0" prefWidth="170.0" promptText="Password" style="-fx-background-color: transparent;" />
+                        <Button fx:id="continueButton" layoutX="69.0" layoutY="251.0" mnemonicParsing="false" onAction="#continueButtonAction" prefHeight="26.0" prefWidth="170.0" style="-fx-background-color: transparent;" text="Continue" textFill="#5a5a5a">
+                            <font>
+                                <Font name="Varela Round" size="13.0" />
+                            </font>
+                        </Button>
+                  <Text fx:id="wrongCombo" fill="#dc3e3e" layoutX="88.0" layoutY="389.0" strokeType="OUTSIDE" strokeWidth="0.0" text="wrong username or password!">
+                     <font>
+                        <Font name="Varela Round" size="10.0" />
+                     </font>
+                  </Text>
+                    </children>
+                </AnchorPane>
+            </children>
+        </AnchorPane>
+      <Pane layoutX="26.0" layoutY="22.0" prefHeight="407.0" prefWidth="320.0" style="-fx-background-color: transparent; -fx-background-radius: 20 0 0 20;">
+         <children>
+              <ImageView fx:id="loginImage" fitHeight="407.0" fitWidth="336.0" pickOnBounds="true" preserveRatio="true">
+                  <image>
+                      <Image url="@../../../../../../images/loginImg2.png" />
+                  </image>
+              </ImageView>
+                <Text fx:id="welcomeText" fill="WHITE" layoutX="32.0" layoutY="62.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Welcome">
+                    <font>
+                        <Font name="Varela Round" size="33.0" />
+                    </font>
+                </Text>
+                <Text fx:id="loginQuestion" fill="WHITE" layoutX="26.0" layoutY="362.0" strokeType="OUTSIDE" strokeWidth="0.0" text="You don't have an account?&#10;click here to " wrappingWidth="219.51502990722656">
+                    <font>
+                        <Font name="Varela Round" size="13.0" />
+                    </font>
+                </Text>
+                <Button fx:id="signUpButton" layoutX="90.0" layoutY="355.0" mnemonicParsing="false" onAction="#changeToSignUp" prefHeight="36.0" prefWidth="80.0" style="-fx-background-color: transparent; -fx-cursor: hand;" text="Sign up." textFill="WHITE" underline="true">
+                    <font>
+                        <Font name="Varela Round" size="13.0" />
+                    </font>
+                </Button>
+         </children>
+      </Pane>
+    </children>
+</AnchorPane>

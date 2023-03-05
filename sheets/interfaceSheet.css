@@ -1,0 +1,40 @@
+#friendList{
+    -fx-background-color: transparent;
+    border-bottom: none;
+    -fx-focus-traversable: false;
+    -fx-font-family: 'Varela Round';
+    -fx-font-size: 13;
+}
+
+#usersList{
+    -fx-background-color: white;
+    border-bottom: none;
+    -fx-focus-traversable: false;
+    -fx-font-family: 'Varela Round';
+    -fx-font-size: 11;
+}
+
+#notificationsListView{
+    -fx-background-color: transparent;
+    border-bottom: none;
+    -fx-focus-traversable: false;
+    -fx-font-family: 'Varela Round';
+    -fx-font-size: 13;
+}
+
+.list-cell {
+    -fx-background-color: transparent;
+}
+
+.list-cell:hover{
+    -fx-background-color: rgba(195, 165, 219, 0.6);
+}
+
+.list-cell:selected{
+    -fx-background-color: rgba(195, 165, 219, 0.8);
+}
+
+.list-cell:empty:hover{
+    -fx-background-color: white;
+}
+
